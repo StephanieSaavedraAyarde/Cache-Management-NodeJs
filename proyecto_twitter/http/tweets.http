@@ -1,0 +1,30 @@
+### Invoke Servidor
+GET http://localhost:3000/
+
+### Get a Timeline by User's following
+GET http://localhost:3000/timeline/7
+
+### Create a Tweet
+POST http://localhost:3000/tweet
+Content-Type: application/json
+
+{
+    "user_id": 7,
+    "tweet_text": "Hola esta es una prueba desde el backend YYYXXX"
+}
+
+### Follow 
+POST http://localhost:3000/follow
+Content-Type: application/json
+
+{
+    "user_a": 1,
+    "user_b": 7
+}
+
+### Cantidad de Seguidos
+GET http://localhost:3000/following/1
+
+
+### Cantidad de Seguidores 
+GET http://localhost:3000/followers/1
